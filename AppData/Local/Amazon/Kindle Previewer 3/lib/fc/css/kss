@@ -1,0 +1,443 @@
+@font-face
+{
+    font-family:"ccl";
+    src:url(ca/caLM);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-style:italic;
+    src:url(ca/caLI);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-stretch:condensed;
+    src:url(cc/cC);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-stretch:condensed;
+    font-style:italic;
+    src:url(cc/cCI);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-weight:bold;
+    src:url(ca/caLB);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-weight:bold;
+    font-style:italic;
+    src:url(ca/caLBI);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-stretch:condensed;
+    font-weight:bold;
+    src:url(cc/cCB);  
+}
+
+@font-face
+{
+    font-family:"ccl";
+    font-stretch:condensed;
+    font-weight:bold;
+    font-style:italic;
+    src:url(cc/cCBI);  
+}
+
+@font-face
+{
+    font-family:"hvl";
+    src:url(he/he);  
+}
+
+@font-face
+{
+    font-family:"hvl";
+    font-style:italic;
+    src:url(he/heI);  
+}
+
+@font-face
+{
+    font-family:"hvl";
+    font-weight:bold;
+    font-style:italic;
+    src:url(he/heBI);  
+}
+
+@font-face
+{
+    font-family:"hvl";
+    font-weight:bold;
+    src:url(he/heB);  
+}
+
+@font-face
+{
+    font-family:"kbb";
+    src:url(kb/kb);
+}
+
+@font-face
+{
+    font-family:"kbb";
+    font-weight:bold;
+    src:url(kb/kbB);
+}
+
+@font-face
+{
+    font-family:"tbg";
+    src:url(tbg/tbg);
+}
+
+
+@font-face
+{
+    font-family:"tbg";
+    font-weight:bold;
+    src:url(tbg/tbgB);
+}
+
+@font-face
+{
+    font-family:"tbm";
+    src:url(tbm/tbm);
+}
+
+
+@font-face
+{
+    font-family:"tbm";
+    font-weight:bold;
+    src:url(tbm/tbmB);
+}
+
+@font-face
+{
+    font-family:"ss";
+    src:url(ss/ss);
+}
+
+
+@font-face
+{
+    font-family:"ss";
+    font-weight:bold;
+    src:url(ss/ssB);
+}
+
+
+@font-face
+{
+    font-family:"stH";
+    src:url(stH/stHR);
+}
+
+
+@font-face
+{
+    font-family:"stH";
+    font-weight:bold;
+    src:url(stH/stHB);
+}
+
+@font-face
+{
+    font-family:"heitc";
+    src:url(heitc/heitc);
+}
+
+@font-face
+{
+    font-family:"heitc";
+    font-weight:bold;
+    src:url(heitc/heitcB);
+}
+
+@font-face
+{
+    font-family:"obs-c2000";
+    src:url(c2000/c2000);
+}
+
+@font-face
+{
+    font-family:"unobs-c2000";
+    src:url(code2000.ttf);
+}
+
+@font-face
+{
+    font-family:"ml";
+    src:url(ml/ml);
+}
+
+@font-face
+{
+    font-family:"ml";
+    font-weight:bold;
+    src:url(ml/mlB);
+}
+
+@font-face
+{
+    font-family:"mu";
+    src:url(mu/mu);
+}
+
+@font-face
+{
+    font-family:"mu";
+    font-weight:bold;
+    src:url(mu/muB);
+}
+
+@font-face
+{
+    font-family:"sa";
+    src:url(sa/sa);
+}
+
+@font-face
+{
+    font-family:"sa";
+    font-weight:bold;
+    src:url(sa/saB);
+}
+
+@font-face
+{
+    font-family:"de";
+    src:url(de/de);
+}
+
+@font-face
+{
+    font-family:"de";
+    font-weight:bold;
+    src:url(de/deB);
+}
+
+@font-face
+{
+    font-family:"ks";
+    src:url(ks/s);
+}
+
+@font-face
+{
+    font-family:"ms";
+    src:url(ks/ms);
+}
+
+@font-face
+{
+    font-family:"em";
+    src:url(em/emR);
+}
+
+@font-face
+{
+    font-family:"em";
+    font-weight:bold;
+    src:url(em/emB);
+}
+
+@font-face
+{
+    font-family:"h";
+    src:url(h/h);  
+}
+
+@font-face
+{
+    font-family:"h";
+    font-style:italic;
+    src:url(h/hI);  
+}
+
+@font-face
+{
+    font-family:"h";
+    font-weight:bold;
+    src:url(h/hB);  
+}
+
+@font-face
+{
+    font-family:"h";
+    font-weight:bold;
+    font-style:italic;
+    src:url(h/hBI);  
+}
+
+@font-face
+{
+    font-family:"bo";
+    src:url(bo/bo);  
+}
+
+@font-face
+{
+    font-family:"bo";
+    font-style:italic;
+    src:url(bo/boI);  
+}
+
+@font-face
+{
+    font-family:"bo";
+    font-weight:bold;
+    src:url(bo/boB);  
+}
+
+@font-face
+{
+    font-family:"bo";
+    font-weight:bold;
+    font-style:italic;
+    src:url(bo/boBI);  
+}
+
+@font-face
+{
+    font-family:"ba";
+    src:url(ba/ba);  
+}
+
+@font-face
+{
+    font-family:"ba";
+    font-style:italic;
+    src:url(ba/baI);  
+}
+
+@font-face
+{
+    font-family:"ba";
+    font-weight:bold;
+    src:url(ba/baB);  
+}
+
+@font-face
+{
+    font-family:"ba";
+    font-weight:bold;
+    font-style:italic;
+    src:url(ba/baBI);  
+}
+
+@font-face
+{
+    font-family:"nn";
+    src:url(ar/NNR);  
+}
+
+@font-face
+{
+    font-family:"nn";
+    font-weight:bold;
+    src:url(ar/NNB);  
+}
+
+@font-face
+{
+    font-family:"dm";
+    src:url(ar/DMR);  
+}
+
+@font-face
+{
+    font-family:"dm";
+    font-weight:bold;
+    src:url(ar/DMB);  
+}
+
+@font-face
+{
+    font-family:"sk";
+    src:url(ar/SKR);  
+}
+
+@font-face
+{
+    font-family:"sk";
+    font-weight:bold;
+    src:url(ar/SKB);  
+}
+
+@font-face
+{
+    font-family:"ds";
+    src:url(ds/ds);
+}
+
+@font-face
+{
+    font-family:"ds";
+    font-style:italic;
+    src:url(ds/dsI);  
+}
+
+@font-face
+{
+    font-family:"ds";
+    font-weight:bold;
+    font-style:italic;
+    src:url(ds/dsBI);  
+}
+
+@font-face
+{
+    font-family:"ds";
+    font-weight:bold;
+    src:url(ds/dsB);  
+}
+
+@font-face
+{
+    font-family:"mt";
+    src:url(mt/mtSp);
+}
+
+@font-face
+{
+    font-family:"songtc";
+    src:url(songtc/songtc);
+}
+
+@font-face
+{
+    font-family:"songtc";
+    font-weight:bold;
+    src:url(songtc/songtcB);  
+}
+
+@font-face
+{
+    font-family:"nsk";
+    src:url(nsk/NSKRR);
+}
+
+@font-face
+{
+    font-family:"nsk";
+    font-weight:bold;
+    src:url(nsk/NSKRB);
+}
+

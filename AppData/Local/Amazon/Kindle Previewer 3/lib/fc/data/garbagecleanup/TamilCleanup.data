@@ -1,0 +1,47 @@
+;Tamil cleanup data.
+;Actions supported - Reordering-reor, delete-delt, update-add.
+;Character categories - Consonant (C), IndependentVowel (V), Halant/Virama (H), Nukta (N), Modifier (M), Matra/Dependent Vowel (m), otherNoJoining (O).
+;Previous Cluster (PC), Current cluster (CC)
+;Codepoints are in decimal format.
+;Step 1 : Categorizing and deleting repeated m,M,N,H.
+;C = consonant
+;V = vowel
+;H = virama
+;N = nukta
+;M = modifier
+;m = matra
+;O = otherNoJoining
+
+;HC = half consonant
+;FC = full consonant
+;codepoints are in decimal format.
+
+Categorize CC
+
+;**-+-^^^^-####, where 
+; ** is cluster current/previous
+; + is character category
+; ^^^^ is code point in decimal
+; #### is action if any - delete-delt, add-add
+; '>' is if-then 
+; condition > action
+
+
+delt-repeated CC m
+delt-repeated CC N
+delt-repeated CC H
+delt-repeated CC M
+
+;ெ + ா -> delete ெ, delete ா, add ொ
+CC-m-3014 CC-m-3006 > CC-m-3014-delt CC-m-3006-delt CC-m-3018-add
+
+;ெ + ௗ -> delete ெ, delete ௗ, add  ௌ
+CC-m-3014 CC-m-3031 > CC-m-3014-delt CC-m-3031-delt CC-m-3020-add
+
+;ே + ா -> delete ே, delete ா, add  ோ
+CC-m-3015 CC-m-3006 > CC-m-3015-delt CC-m-3006-delt CC-m-3019-add
+
+;(ஞ, ண, த, ந, ல, ற, ன)  + ு + ா -> delete ு,  delete ா,  add ூ
+CC-C-2974,2979,2980,2984,2994,2993,2985 CC-m-3009 CC-m-3006 > CC-m-3009-delt CC-m-3006-delt CC-m-3010-add
+
+reor CC C,V,N,H,m,M,O

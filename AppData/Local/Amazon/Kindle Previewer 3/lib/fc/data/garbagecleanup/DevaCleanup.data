@@ -1,0 +1,103 @@
+;Devanagari cleanup data.
+;Actions supported - Reordering-reor, delete-delt, update-add.
+;Character categories - Consonant (C), IndependentVowel (V), Halant/Virama (H), Nukta (N), Modifier (M), Matra/Dependent Vowel (m), otherNoJoining (O).
+;Previous Cluster (PC), Current cluster (CC)
+;Codepoints are in decimal format.
+;Step 1 : Categorizing and deleting repeated m,M,N,H.
+;C = consonant
+;V = vowel
+;H = virama
+;N = nukta
+;M = modifier
+;m = matra
+;O = otherNoJoining
+
+;HC = half consonant
+;FC = full consonant
+;codepoints are in decimal format.
+
+Categorize CC
+Categorize PC
+
+;**-+-^^^^-####, where 
+; ** is cluster current/previous
+; + is character category
+; ^^^^ is code point in decimal
+; #### is action if any - delete-delt, add-add
+; '>' is if-then 
+; condition > action
+
+;् + ा -> delete both as HC plus danda was used to create FC.
+CC-H-2381 CC-m-2366 > CC-H-2381-delt CC-m-2366-delt
+
+delt-repeated CC m
+delt-repeated CC N
+delt-repeated CC H
+delt-repeated CC M
+
+;् + ो -> delete both and add े as HC plus ो was used to create FC + े
+CC-H-2381 CC-m-2379 > CC-H-2381-delt CC-m-2379-delt CC-m-2375-add
+
+;् + ौ -> delete both and add ै as HC plus ौ was used to create FC + ै
+CC-H-2381 CC-m-2380 > CC-H-2381-delt CC-m-2380-delt CC-m-2376-add
+
+;if Halant is present in previous cluster then move all nukta, modifier and matras of previous cluster to current cluster.
+PC-H-2381 > PC-m-****-shft-CC PC-M-****-shft-CC PC-N-****-shft-CC
+
+;ै,ो,ौ + े -> delete े
+CC-m-2376,2379,2380 CC-m-2375 > CC-m-2375-delt
+
+;ँ + ं -> delete ं
+CC-M-2305 CC-M-2306 > CC-M-2306-delt
+
+;ँ + ं + ॅ -> delete ं + delete ॅ
+CC-M-2305 CC-M-2306 CC-m-2373 > CC-M-2306-delt CC-m-2373-delt
+
+;ँ + ॅ -> delete ॅ
+CC-M-2305 CC-m-2373 > CC-m-2373-delt
+
+; ं + ॅ -> delete ं + delete ॅ + add ँ  
+CC-M-2306 CC-m-2373 > CC-M-2306-delt CC-m-2373-delt CC-M-2305-add
+
+; ा + ॅ -> delete ॅ + delete ा + add ॉ
+CC-m-2366 CC-m-2373 > CC-m-2366-delt CC-m-2373-delt CC-m-2377-add
+
+; ा + े -> delete े + delete ा + add ो
+CC-m-2366 CC-m-2375 > CC-m-2366-delt CC-m-2375-delt CC-m-2379-add
+
+; ा + ै -> delete ै + delete ा + add ौ
+CC-m-2366 CC-m-2376 > CC-m-2366-delt CC-m-2376-delt CC-m-2380-add
+
+; ॊ+ ॆ -> delete ॆ
+CC-m-2378 CC-m-2374 > CC-m-2374-delt
+
+;ौ + ै -> delete ै
+CC-m-2380 CC-m-2376 > CC-m-2376-delt
+
+; ो + ै ->  delete ो delete ै add ौ
+CC-m-2379 CC-m-2376 > CC-m-2379-delt CC-m-2376-delt CC-m-2380-add
+
+;ः + space -> : , when ः is used in place of colon
+CC-M-2307 CC-O-0032 > CC-M-2307-delt CC-M-0058-add
+
+;़ + space -> . , when ़ is used in place of .
+CC-N-2364 CC-O-0032 > CC-N-2364-delt CC-M-0046-add
+
+;ॐ + ँ , ं-> delete  ँ , ं
+CC-O-2384 CC-M-2305,2306,2373 > CC-M-2305,2306-delt CC-m-2373-delt
+
+;ॐ + ॅ-> delete ॅ
+CC-O-2384 CC-m-2373 > CC-m-2373-delt
+
+
+; क़,ख़,ग़,ज़,ड़,ढ़,फ़,य़,ऩ,ऱ +  ़ -> delete ़
+CC-C-2392,2393,2394,2395,2396,2397,2398,2399,2345,2353 CC-N-2364 > CC-N-2364-delt
+
+
+delt-repeated CC m
+delt-repeated CC N
+delt-repeated CC H
+delt-repeated CC M
+
+reor CC C,V,N,H,m,M,O
+reor PC C,V,N,H,m,M,O

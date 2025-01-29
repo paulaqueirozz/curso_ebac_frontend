@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+   <Map>
+      <ASCII>0000</ASCII>
+      <Unicode>
+         <preConsonantUnicode />
+         <postNextConsonantUnicode />
+         <unicode>0000</unicode>
+      </Unicode>
+   </Map>
+</Table>

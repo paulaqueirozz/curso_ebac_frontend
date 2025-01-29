@@ -1,0 +1,29 @@
+{
+   "AutoUpdateEnabled" : "DISABLED",
+   "CheckforCount" : "DISABLED",
+   "OSUpgradeLastShownVersion" : "",
+   "appID" : "4cf062ca-40b3-4df3-b6c2-9e47caa9c46f",
+   "appLaunchTime" : "1699269688",
+   "books" : [
+      "C:/Users/Paula/Desktop/Frilas/Mil Folhas/Por que mudei_Audible_Ep1e2.docx"
+   ],
+   "crashFiles" : null,
+   "defaultAspectRatio" : "16:9",
+   "defaultDeviceName" : "Tablet",
+   "defaultOrientation" : 0,
+   "feedbackPopOpenBookCount" : 1,
+   "feedbackVersions" : null,
+   "feedbackpopupenabled" : "ENABLED",
+   "ipType" : "KprIpExternal",
+   "lastProcessedFile" : "C:/Users/Paula/Desktop/Frilas/Mil Folhas/Por que mudei_Audible_Ep1e2.docx",
+   "locale" : "pt",
+   "location" : "C:/Users/Paula/Desktop/Frilas/Mil Folhas",
+   "lowResolutionDialogEnabled" : "ENABLED",
+   "nextpopuptime" : "1699924275",
+   "paneSettingsString" : "111",
+   "sendCrashReport" : "ENABLED",
+   "sendDiagnosticsEnabled" : "ENABLED",
+   "sessionID" : "6fde9d9d-a11c-435e-92f7-7367a2ce34a0",
+   "showOSUpgradePopupFlag" : "ENABLED",
+   "version" : "1.0"
+}

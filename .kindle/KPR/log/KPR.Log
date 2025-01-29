@@ -1,0 +1,66 @@
+[Mon Nov 06 11:21:29 UTC 2023][ERROR] Error scheduling NCD executable
+[Mon Nov 06 11:21:29 UTC 2023][ERROR] NCD scheduling failed with error: QPROCESS_RETURN_ERROR
+[Mon Nov 06 11:21:31 UTC 2023][INFO] Extensions to be loaded, count : 1
+[Mon Nov 06 11:21:33 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 11:21:33 UTC 2023][INFO] Checking sign in information..
+[Mon Nov 06 11:21:33 UTC 2023][INFO] Launching Desktop Previewer
+[Mon Nov 06 11:21:34 UTC 2023][INFO] Launched Desktop Previewer
+[Mon Nov 06 11:21:34 UTC 2023][INFO] Launching the check thread for 3.74.0 version
+[Mon Nov 06 11:21:34 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 11:21:34 UTC 2023][INFO] Processing response
+[Mon Nov 06 11:21:34 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 11:22:05 UTC 2023][INFO] Invoking kpr language selection dialog for docx import
+[Mon Nov 06 11:22:59 UTC 2023][INFO] LocationMapPopulatedEvent Received
+[Mon Nov 06 11:22:59 UTC 2023][INFO] PC::hE - LocationMapPopulatedEvent start
+[Mon Nov 06 11:22:59 UTC 2023][INFO] PC::hE - LocationMapPopulatedEvent end
+[Mon Nov 06 11:22:59 UTC 2023][INFO] PostPreviewStepsSavedEvent Received
+[Mon Nov 06 11:22:59 UTC 2023][INFO] PC::hE - PostPreviewStepsSavedEvent start
+[Mon Nov 06 11:22:59 UTC 2023][INFO] PC::hE - PostPreviewStepsSavedEvent end
+[Mon Nov 06 12:21:34 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 12:21:35 UTC 2023][INFO] Processing response
+[Mon Nov 06 12:21:35 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 14:22:06 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 14:22:06 UTC 2023][INFO] Processing response
+[Mon Nov 06 14:22:06 UTC 2023][WARN] Host kindlepreviewer.s3.amazonaws.com not found
+[Mon Nov 06 14:22:06 UTC 2023][ERROR] Network Error with ssl version 1.1 or older
+[Mon Nov 06 14:22:08 UTC 2023][INFO] NetworkManager::onError 5
+[Mon Nov 06 14:22:08 UTC 2023][INFO] Network request error: URL=[https://www.amazon.com/ping], description=[5], reason=[Operation canceled], httpcode=[]
+[Mon Nov 06 14:22:08 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 14:22:08 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 14:22:11 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 14:23:06 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 14:23:07 UTC 2023][INFO] Processing response
+[Mon Nov 06 14:23:07 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 15:23:07 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 15:23:07 UTC 2023][INFO] Processing response
+[Mon Nov 06 15:23:07 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 16:23:07 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 16:23:08 UTC 2023][INFO] Processing response
+[Mon Nov 06 16:23:08 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 17:23:08 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 17:23:09 UTC 2023][INFO] Processing response
+[Mon Nov 06 17:23:09 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 18:23:09 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 18:23:09 UTC 2023][INFO] Processing response
+[Mon Nov 06 18:23:09 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 19:23:09 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 19:23:10 UTC 2023][INFO] Processing response
+[Mon Nov 06 19:23:10 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 20:23:10 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 20:23:11 UTC 2023][INFO] Processing response
+[Mon Nov 06 20:23:11 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Mon Nov 06 23:38:26 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 23:38:27 UTC 2023][INFO] Processing response
+[Mon Nov 06 23:38:27 UTC 2023][WARN] Host kindlepreviewer.s3.amazonaws.com not found
+[Mon Nov 06 23:38:28 UTC 2023][ERROR] Network Error with ssl version 1.2 or later
+[Mon Nov 06 23:38:29 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 23:38:31 UTC 2023][INFO] Network Debug: received reply https://www.amazon.com/ping with status 200 for request  https://www.amazon.com/ping
+[Mon Nov 06 23:40:27 UTC 2023][INFO] Checking for updates...
+[Mon Nov 06 23:40:28 UTC 2023][INFO] Processing response
+[Mon Nov 06 23:40:28 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Tue Nov 07 00:40:28 UTC 2023][INFO] Checking for updates...
+[Tue Nov 07 00:40:29 UTC 2023][INFO] Processing response
+[Tue Nov 07 00:40:29 UTC 2023][INFO] Unable to find new update: already on latest version.
+[Tue Nov 07 01:11:15 UTC 2023][INFO] Waiting for the old Check Thread to stop
+[Tue Nov 07 01:11:15 UTC 2023][INFO] Stopped the old Check Thread. isSuccessfull ? true
+[Tue Nov 07 01:11:15 UTC 2023][INFO] Logger Terminated
